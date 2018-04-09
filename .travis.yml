@@ -1,0 +1,12 @@
+deploy:
+  provider: s3
+  access_key_id: AKIAINQHVIPHPAW2JS5Q
+  secret_access_key:
+    secure: SWWXhZ1nWxOZV/seLMzBha2/7z44UNKIeEAbLKq7QgZ64e+aXOWXCwW2fW0dhvoPLqETBMlW7qTF486WxwDtpjuBh0o3dpqulvGDL6vg2RXn6VcUOFDo5CjYnFu8+oToKHcbsPkI0VkfyeXFvDbuXppW/mDpBcdB6NeMEbJaAJH1n4DkImHh8NSAEPI9xo68da7LCR7PinG1IqyYt92QVvVTDe6FLlbDyjTjABFPdBBakXriGobxfmZdwIdSHvH7n2kR0z8TxnwgZ5jeHhNw79+HrsTi4f8aOdXAU0kGj4q6plDnWIa0WMHuBhGS9NsuP0bVsl7ng/KINzGe6BhFyLcgYB3ROSqlUz8FlZ1YTTSVLADUX203k2JYprSXqaQ7BkKeTe6/KOlOb82YictXvymXVZCGYLIZ8LIXP8KDfagocrMC+kSl5gE/5YZXZjRLtcv/Zjg7qycRpAUmvzjlkB4PL+7ZtetTEMLRalhy8IIidtqTZlTvzM5OXXLXoMYkFAt+G6mE/VWHeGxFq3PUxqwY4tKMOr0cvEE9IfZkVf3hlgPYmQRGF8CdoBsjgYFvsRfPjIyX5a6jK692uyl7BK/irNytxxk4ObRRZjPHu0mFxpkkiYPv2bk/7nxuXh/z2CnqzONIQqLMJ6+01fuwDpZgnVyONa4Nsw2BvG8RETM=
+  bucket: guillermoandraefisher.com
+  skip_cleanup: true
+  region: us-east-1
+  acl: public_read
+  on:
+    repo: guillermoandrae/guillermo
+

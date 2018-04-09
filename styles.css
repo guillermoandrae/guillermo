@@ -1,0 +1,49 @@
+body {
+    background: #222;
+    color: #555;
+    font-family: "Roboto Condensed", sans-serif;
+    padding-top: 15%;
+}
+
+#container, footer {
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+}
+
+#container p {
+    font-size: 3em;
+}
+
+em {
+    color: #999;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    padding-right: 25px;
+}
+
+ul li a {
+    color: #777;
+    font-size: 1em;
+}
+
+ul li a:hover {
+    color: #999;
+}
+
+footer {
+    margin-top: 15%;
+}
+
+footer a {
+    color: #555;
+}
