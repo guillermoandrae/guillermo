@@ -8,11 +8,11 @@ body {
 #container, footer {
     text-align: center;
     margin: 0 auto;
-    width: 500px;
+    width: 50%;
 }
 
 #container p {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 em {
@@ -28,7 +28,7 @@ ul {
 
 ul li {
     display: inline;
-    padding-right: 25px;
+    padding-right: 10px;
 }
 
 ul li a {
@@ -37,7 +37,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #999;
+    color: #fff;
 }
 
 footer {
