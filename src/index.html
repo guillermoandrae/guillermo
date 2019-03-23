@@ -31,6 +31,32 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7964669-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-7964669-2');
+    </script>
+
+    <!-- Track outbound links - Google Analytics -->
+    <script>
+        /**
+        * Function that captures a click on an outbound link in Analytics.
+        * This function takes a valid URL string as an argument, and uses that URL string
+        * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+        * using 'navigator.sendBeacon' in browser that support it.
+        */
+        var captureOutboundLink = function(url) {
+           ga('send', 'event', 'outbound', 'click', url, {
+             'transport': 'beacon',
+             'hitCallback': function(){document.location = url;}
+           });
+        }
+    </script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -57,13 +83,6 @@
             <li id="note-1">Usually insipid, yet still the best way to know what he's doing.</li>
             <li id="note-2">Use the code; don't use the content.</li>
         </ol>
-    </footer>
-
-    <!-- Google Analytics -->
-    <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-7964669-2', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </footer>  
 </body>
 </html>
