@@ -34,10 +34,15 @@ em {
 }
 
 a, sup a:hover, .dataTables_wrapper a.paginate_button {
-    background: cornflowerblue;
-    color: #fff !important;
+    background: #eee;
+    border: 0;
     padding: 2px 5px;
     text-decoration: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: cornflowerblue;
+    border: 0;
 }
 
 sup {
@@ -150,7 +155,7 @@ footer a {
 @media only screen and (max-width : 320px) {
     #container, footer {
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
     }
 
     p, ul li {
