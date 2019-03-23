@@ -33,9 +33,9 @@ em {
     text-transform: uppercase;
 }
 
-a, sup a:hover {
+a, sup a:hover, .dataTables_wrapper a.paginate_button {
     background: cornflowerblue;
-    color: #fff;
+    color: #fff !important;
     padding: 2px 5px;
     text-decoration: none;
 }
@@ -58,6 +58,74 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: .2em 0 0;
+}
+
+input {
+    padding: 0 0 15px;
+    width: 100%;
+}
+
+input:focus-within {
+    outline: none;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+input, input:focus {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#posts_filter {
+    float: none;
+    text-align: center;
+}
+
+#posts {
+    margin-top: 35px;
+}
+
+#posts th {
+    border: 0;
+    font-size: .8em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+table.dataTable.no-footer {
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    float: none;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.paginate_button {
+
+}
+
+#posts td {
+    padding: 15px;
+}
+
+.result-source {
+    background: lightskyblue;
+    color: #fff;
+    font-size: x-small;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px 0 10px 25px;
+    text-transform: uppercase;
+}
+
+.result:hover {
+    background: lightskyblue;
+    color: #fff;
 }
 
 footer {
