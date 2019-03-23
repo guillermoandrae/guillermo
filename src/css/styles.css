@@ -1,14 +1,15 @@
 body {
     background: #fff;
-    border-top: 10px solid cornflowerblue;
+    border-top: 1em solid cornflowerblue;
     color: #333;
     font-family: "Rubik", sans-serif;
-    padding-top: 4%;
+    font-size: .8em;
+    padding-top: 3em;
 }
 
 #container, footer {
-    margin: 0 auto;
-    width: 55%;
+    margin: 0 auto 3em;
+    width: 80%;
 }
 
 h1 {
@@ -27,26 +28,16 @@ p, ul li {
     line-height: 1.5em;
 }
 
-em {
-    color: cornflowerblue;
-    font-style: normal;
-    text-transform: uppercase;
+sup {
+    margin-left: .3em;
 }
 
-a, sup a:hover, .dataTables_wrapper a.paginate_button {
+a, a:visited, sup a:hover {
     background: #eee;
+    color: cornflowerblue;
     border: 0;
     padding: 2px 5px;
     text-decoration: none;
-}
-
-.dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    background: cornflowerblue;
-    border: 0;
-}
-
-sup {
-    margin-left: .3em;
 }
 
 a:hover, sup a {
@@ -59,82 +50,20 @@ sup a:hover {
     color: #fff;
 }
 
+em {
+    color: cornflowerblue;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: .2em 0 0;
 }
 
-input {
-    padding: 0 0 15px;
-    width: 100%;
-}
-
-input:focus-within {
-    outline: none;
-}
-
-input::placeholder {
-    color: #ccc;
-    font-style: italic;
-}
-
-input, input:focus {
-    border: none;
-    border-bottom: 1px solid #ccc;
-}
-
-#posts_filter {
-    float: none;
-    text-align: center;
-}
-
-#posts {
-    margin-top: 35px;
-}
-
-#posts th {
-    border: 0;
-    font-size: .8em;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-table.dataTable.no-footer {
-    border: 0;
-}
-
-.dataTables_wrapper .dataTables_paginate {
-    float: none;
-    margin-top: 25px;
-    text-align: center;
-}
-
-.paginate_button {
-
-}
-
-#posts td {
-    padding: 15px;
-}
-
-.result-source {
-    background: lightskyblue;
-    color: #fff;
-    font-size: x-small;
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 10px 0 10px 25px;
-    text-transform: uppercase;
-}
-
-.result:hover {
-    background: lightskyblue;
-    color: #fff;
-}
-
 footer {
-    border-top: 1px solid cornflowerblue;
+    border-top: 1px solid #ddd;
     font-size: 75%;
     margin-top: 2.4em; 
 }
@@ -148,18 +77,12 @@ footer li {
     line-height: 1.5em;
 }
 
-footer a {
-    color: #555;
-}
-
-@media only screen and (max-width : 320px) {
-    #container, footer {
-        margin: 0 auto;
-        width: 100%;
+@media only screen and (min-width: 959px) {
+    body {
+        font-size: 1em;
     }
 
-    p, ul li {
-        font-size: 1em;
-        line-height: 1.2em;
+    #container, footer {
+        width: 55%;
     }
 }

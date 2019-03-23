@@ -33,6 +33,7 @@
     <!-- App CSS -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7964669-2"></script>
@@ -56,6 +57,7 @@
     <![endif]-->
 </head>
 <body>
+    <div id="nav"><a href="/">Home</a></div>
     <div id="container">
         <table id="posts" class="hover">
             <thead>
@@ -78,15 +80,19 @@
                 "order": [[ 2, "desc" ]],
                 "ajax": "https://api.guillermoandraefisher.com/posts?limit=9999",
                 "columns": [
-                    { "data": "source"},
-                    { "data": "body"},
-                    { "data": "id"}
+                    { "data": "source" },
+                    { "data": "body" },
+                    { "data": "id" }
                 ],
                 "language": {
                     "search": "_INPUT_",
                     "searchPlaceholder": "Search..."
                 },
                 "rowCallback": function( row, data, dataIndex ) {
+                    var link = document.createElement("a");
+                    link.setAttribute("href", data.htmlUrl);
+                    link.innerHTML = data.source;
+                    $('td:eq(0)', row).html( link );
                     var timestamp = (data.createdAt.length === 0) ? parseFloat(data.id) : parseFloat(data.createdAt) * 1000;
                     var newDate = new Date(timestamp);
                     $('td:eq(2)', row).html( newDate.toLocaleDateString() );

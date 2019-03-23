@@ -1,0 +1,101 @@
+#nav {
+    margin: 0;
+    position: absolute;
+    top: 1em;
+}
+
+#nav a {
+    background: cornflowerblue;
+    color: #fff;
+    display: block;
+    padding: .5em 1em;
+}
+
+#container {
+    width: 100%;
+}
+
+input {
+    padding: 0;
+    width: 100%;
+}
+
+input:focus-within {
+    outline: none;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+input, input:focus {
+    border: none;
+}
+
+#posts {
+    border-top: 1px solid #ddd;
+    margin-top: 1em;
+    padding-top: 1em;
+    width: 100%;
+}
+
+#posts th {
+    border: 0;
+    font-size: .8em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#posts th:nth-child(2) {
+    width: 7em !important;
+}
+
+#posts td {
+    padding: 1em;
+}
+
+.dataTables_wrapper .dataTables_paginate a.paginate_button {
+    background: #eee;
+    border: 0;
+    font-size: 1em;
+    padding: .5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate a.paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover {
+    background: cornflowerblue;
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #fff !important;
+}
+
+#posts_filter {
+    float: none;
+    text-align: center;
+}
+
+table.dataTable.no-footer {
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    float: none;
+    margin-top: 2em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 959px) {
+    #container {
+        width: 55%;
+    }
+
+    #posts th:nth-child(2) {
+        width: 150em !important;
+    }
+}
