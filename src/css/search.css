@@ -6,9 +6,20 @@
 
 #nav a {
     background: cornflowerblue;
-    color: #fff;
+    color: white;
     display: block;
+    letter-spacing: 2px;
     padding: .5em 1em;
+    text-transform: uppercase;
+}
+
+#nav a:hover {
+    background: white;
+    color: cornflowerblue;
+    display: block;
+    letter-spacing: 2px;
+    padding: .5em 1em;
+    text-transform: uppercase;
 }
 
 #container {
@@ -58,7 +69,7 @@ input, input:focus {
 .dataTables_wrapper .dataTables_paginate a.paginate_button {
     background: #eee;
     border: 0;
-    font-size: 1em;
+    font-size: .9em;
     padding: .5em 1em;
     text-decoration: none;
     text-transform: uppercase;
@@ -72,7 +83,7 @@ input, input:focus {
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    color: #fff !important;
+    color: white !important;
 }
 
 #posts_filter {

@@ -1,5 +1,5 @@
 body {
-    background: #fff;
+    background: white;
     border-top: 1em solid cornflowerblue;
     color: #333;
     font-family: "Rubik", sans-serif;
@@ -42,12 +42,12 @@ a, a:visited, sup a:hover {
 
 a:hover, sup a {
     background: lightskyblue;
-    color: #fff;
+    color: white;
 }
 
 sup a:hover {
     background: cornflowerblue;
-    color: #fff;
+    color: white;
 }
 
 em {
