@@ -26,6 +26,11 @@
     width: 100%;
 }
 
+code {
+    color: olive;
+    font-weight: 700;
+}
+
 input {
     padding: 0;
     width: 100%;
