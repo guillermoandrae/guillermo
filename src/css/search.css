@@ -1,5 +1,6 @@
 #nav {
     margin: 0;
+    padding: 0;
     position: absolute;
     top: 1em;
 }
@@ -14,12 +15,8 @@
 }
 
 #nav a:hover {
-    background: white;
+    background: transparent;
     color: cornflowerblue;
-    display: block;
-    letter-spacing: 2px;
-    padding: .5em 1em;
-    text-transform: uppercase;
 }
 
 #container {
@@ -32,8 +29,9 @@ code {
 }
 
 input {
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
+    width: 90%;
 }
 
 input:focus-within {
