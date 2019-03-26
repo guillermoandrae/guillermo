@@ -22,10 +22,10 @@ var getContentColumnContent = function (source, body) {
             break;
     }
     var content = body.replace(/\@([a-z0-9_]+)([ ;:.]?)/ig, '<a href="' + postUrl + '">@$1</a>$2')
-                    .replace(/http(.*)(jpg|png|gif)/ig, '<a href="$&">$&</a>')
-                    .replace(/https:\/\/t.co\/([a-z0-9]+){10}/ig, '<a href="$&">$&</a>')
-                    .replace(/\`(.*)\`/ig, "<code>$1</code>")
-                    .replace(/\#([a-z0-9_-]+)([ ;:.]?)/ig, '<a href="' + hashTagUrl + '">#$1</a>$2');
+        .replace(/http(.*)(jpg|png|gif)/ig, '<a href="$&">$&</a>')
+        .replace(/https:\/\/t.co\/([a-z0-9]+){10}/ig, '<a href="$&">$&</a>')
+        .replace(/\`(.*)\`/ig, "<code>$1</code>")
+        .replace(/\#([a-z0-9_-]+)([ ;:.]?)/ig, '<a href="' + hashTagUrl + '">#$1</a>$2');
     return content;
 };
 
