@@ -1,9 +1,9 @@
 var Allowance = function () {
     var getChildren = function () {
         return [
-            { "id": 1, "name": "Tatiana", "max_weekly_amount": 10, "owed_week_amount": 7.5, "owed_to_date_amount": 10 },
-            { "id": 2, "name": "Jayden", "max_weekly_amount": 8, "owed_week_amount": 4, "owed_to_date_amount": 8 },
-            { "id": 3, "name": "Amaya", "max_weekly_amount": 8, "owed_week_amount": 8, "owed_to_date_amount": 8 }
+            { "id": 1, "name": "Tatiana", "max_weekly_amount": 10, "owed_week_amount": 7.5, "owed_to_date_amount": 0 },
+            { "id": 2, "name": "Jayden", "max_weekly_amount": 8, "owed_week_amount": 4, "owed_to_date_amount": 0 },
+            { "id": 3, "name": "Amaya", "max_weekly_amount": 8, "owed_week_amount": 8, "owed_to_date_amount": 0 }
         ];
     };
 
