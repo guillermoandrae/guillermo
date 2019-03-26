@@ -39,4 +39,5 @@ var Allowance = function () {
 
 $(document).ready(function(){
     Allowance.init();
+    $("#sidebarToggleTop").click();
 });
