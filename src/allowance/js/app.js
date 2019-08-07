@@ -1,9 +1,9 @@
 var Allowance = function () {
     var getChildren = function () {
         return [
-            { "id": 1, "name": "Tatiana", "max_weekly_amount": 10, "owed_week_amount": 7.5, "owed_to_date_amount": 0 },
-            { "id": 2, "name": "Jayden", "max_weekly_amount": 8, "owed_week_amount": 4, "owed_to_date_amount": 0 },
-            { "id": 3, "name": "Amaya", "max_weekly_amount": 8, "owed_week_amount": 8, "owed_to_date_amount": 0 }
+            { "id": 1, "name": "Tatiana", "max_weekly_amount": 10, "owed_week_amount": 7.5, "backpay_amount": 0 },
+            { "id": 2, "name": "Jayden", "max_weekly_amount": 8, "owed_week_amount": 4, "backpay_amount": 0 },
+            { "id": 3, "name": "Amaya", "max_weekly_amount": 8, "owed_week_amount": 8, "backpay_amount": 0 }
         ];
     };
 
@@ -14,7 +14,7 @@ var Allowance = function () {
         $(children).each(function (index, child) {
             var card = template;
             card.find(".child-avatar img").attr("src", "img/tatiana.jpg");
-            var owedThisWeekElement = card.find(".child-owed-this-week");
+            var owedThisWeekElement = card.find(".child-week-amount");
 
             owedThisWeekElement.html(child.owed_week_amount);
             if (child.max_weekly_amount > child.owed_week_amount) {
@@ -24,7 +24,7 @@ var Allowance = function () {
                 owedThisWeekElement.addClass("text-success");
             }
             
-            card.find(".child-owed-to-date").html(child.owed_to_date_amount);
+            card.find(".child-backpay-amount").html(child.backpay_amount);
             container.append(card.html());
         });
     };

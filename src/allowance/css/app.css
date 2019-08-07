@@ -14,15 +14,12 @@ em.child-total {
 .child-avatar img {
     border: 1em solid #ddd;
     margin-bottom: 1.5em;
-    width: 115px;
+    width: 100px;
 }
 
-.btn-group-vertical {
-    margin-top: .5em;
-}
-
-.btn-group-vertical .btn {
-    margin-bottom: .3em;
+.payment-options .btn-circle.btn-lg {
+    height: 4em;
+    width: 4em;
 }
 
 

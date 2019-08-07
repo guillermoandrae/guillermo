@@ -138,24 +138,22 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 text-center"><div class="child-avatar"><img class="rounded-circle" src="img/no_avatar.jpg"></div></div>
-                                <div class="col-md-3 text-center">
-                                    <div class="text-xs font-weight-bold text-default text-uppercase mb-1">This Week</div>
-                                    $<em class="child-total child-owed-this-week" data-owed-this-week="0">0</em>
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <div class="text-xs font-weight-bold text-default text-uppercase mb-1">Backpay</div>
-                                    $<em class="child-total child-owed-to-date" data-owed-to-date="0">0</em>
+                                <div class="col-md-6 card">
+                                    <div class="row card-body">
+                                        <div class="col text-center">
+                                            <div class="text-xs font-weight-bold text-default text-uppercase mb-1">This Week</div>
+                                            $<em class="child-total child-week-amount" data-week-amount="0">0</em>
+                                        </div>
+                                        <div class="col text-center">
+                                            <div class="text-xs font-weight-bold text-default text-uppercase mb-1">Backpay</div>
+                                            $<em class="child-total child-backpay-amount" data-backpay-amount="0">0</em>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-4 text-center">
-                                    <div class="btn-group-vertical">
-                                        <a href="#" class="btn btn-lg btn-warning btn-icon-split">
-                                            <span class="icon text-white-50"><i class="fas fa-exclamation-triangle"></i></span>
-                                            <span class="text">Subtract</span>
-                                        </a>
-                                        <a href="#" class="btn btn-lg btn-primary btn-icon-split">
-                                            <span class="icon text-white-50"><i class="fas fa-coins"></i></span>
-                                            <span class="text">Pay Out</span>
-                                        </a>
+                                    <div class="payment-options">
+                                        <button class="btn-circle btn-lg btn-warning"><i class="fas fa-minus"></i></button>
+                                        <button class="btn-circle btn-lg btn-secondary"><i class="fas fa-dollar-sign"></i></button>
                                     </div>
                                 </div>
                             </div>
