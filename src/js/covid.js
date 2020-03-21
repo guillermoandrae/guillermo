@@ -11,7 +11,7 @@ $(document).ready(function () {
             $tile.find(".covid-time").html("Last updated " + dateTime);
             $tile.find(".covid-url a").attr("href", data[i].url);
             $tile.insertAfter($template);
-            $tile.fadeIn();
+            $tile.css("display", "block");
         });
     });
 });
