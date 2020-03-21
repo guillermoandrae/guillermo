@@ -33,6 +33,7 @@ code {
 h1 {
     font-weight: normal;
     text-align: center;
+    margin-bottom: 1.5em;
     margin-left: 0;
     color: cornflowerblue;
 }
