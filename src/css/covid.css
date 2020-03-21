@@ -1,0 +1,30 @@
+.covid-tile {
+    border-bottom: 1px solid #eee;
+    display: none;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.covid-state {
+    color: gray;
+    font-weight: normal;
+    font-variant: all-small-caps;
+}
+
+.covid-count {
+    display: block;
+    font-size: 6em;
+}
+
+.covid-url {
+    color: #aaa;
+    display: block;
+    font-size: .8em;
+    margin-bottom: 1em;
+}
+
+time {
+    color: #ddd;
+    display: block;
+    font-size: .8em;
+}

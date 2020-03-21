@@ -12,13 +12,6 @@ body {
     width: 80%;
 }
 
-h1 {
-    font-size: .8em;
-    font-weight: 700;
-    margin-left: -2em;
-    text-transform: uppercase;
-}
-
 h1+p {
     margin-top: .2em;
 }

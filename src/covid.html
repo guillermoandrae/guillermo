@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Search | The life and times of Guillermo A. Fisher</title>
+    <title>COVID-19 | The life and times of Guillermo A. Fisher</title>
 
     <meta name="description" content="The life and times of Guillermo A. Fisher">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,27 +14,24 @@
 
     <meta property="og:url" content="https://guillermoandraefisher.com">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Search | The life and times of Guillermo A. Fisher">
+    <meta property="og:title" content="COVID-19 | The life and times of Guillermo A. Fisher">
     <meta property="og:description" content="The life and times of Guillermo A. Fisher">
     <meta property="og:image" content="https://en.gravatar.com/userimage/68503725/4acdbc44d16dc6c0ea026eb107fcfa0b.png?size=200">
 
     <link rel="manifest" href="manifest.webmanifest">
-    
+
     <link rel="apple-touch-icon" href="gravatar.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,700" rel="stylesheet">
-
-    <!-- DataTables CSS -->
-    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,700" rel="stylesheet">
 
     <!-- App CSS -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/interior.css" rel="stylesheet">
-    <link href="css/search.css" rel="stylesheet">
+    <link href="css/covid.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7964669-2"></script>
@@ -46,30 +43,43 @@
         gtag('config', 'UA-7964669-2');
     </script>
 
-    <!-- DataTables JS -->
+    <!-- Track outbound links - Google Analytics -->
+    <script>
+        /**
+         * Function that captures a click on an outbound link in Analytics.
+         * This function takes a valid URL string as an argument, and uses that URL string
+         * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+         * using 'navigator.sendBeacon' in browser that support it.
+         */
+        var captureOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = url;}
+            });
+        }
+    </script>
+
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
-    <div id="nav"><a href="/">Home</a></div>
-    <div id="container">
-        <table id="posts" class="hover">
-            <thead>
-                <tr>
-                    <th>Source</th>
-                    <th>Content</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-        </table>
+<div id="nav"><a href="/">Home</a></div>
+<div id="container">
+    <h1>Confirmed COVID-19 Cases</h1>
+    <div class="covid-tile">
+        <h2 class="covid-state">State</h2>
+        <span class="covid-count">0</span>
+        <span class="covid-url"><a href="#">https://yo</a></span>
+        <time class="covid-time">0</time>
     </div>
-    <script src="js/search.js"></script>
+</div>
+<script src="js/covid.js"></script>
 </body>
 </html>

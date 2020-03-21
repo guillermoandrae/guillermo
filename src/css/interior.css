@@ -1,0 +1,44 @@
+#nav {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1em;
+}
+
+#nav a {
+    background: cornflowerblue;
+    color: white;
+    display: block;
+    letter-spacing: 2px;
+    padding: .5em 1em;
+    text-transform: uppercase;
+}
+
+#nav a:hover {
+    background: transparent;
+    color: cornflowerblue;
+}
+
+#container {
+    width: 100%;
+}
+
+code {
+    color: olive;
+    font-family: "Monaco", monospace;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+    margin-left: 0;
+    color: cornflowerblue;
+}
+
+@media only screen and (min-width: 959px) {
+    #container {
+        width: 55%;
+    }
+}
