@@ -9,8 +9,6 @@ $(document).ready(function () {
             $tile.find(".covid-state").html(data[i].state);
             $tile.find(".covid-count").html(count);
             $tile.find(".covid-time").html("Last updated " + dateTime);
-            let $link = $("<a></a>");
-            $tile.find(".covid-url a").html(data[i].url);
             $tile.find(".covid-url a").attr("href", data[i].url);
             $tile.insertAfter($template);
             $tile.fadeIn();

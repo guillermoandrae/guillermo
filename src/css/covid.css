@@ -17,14 +17,20 @@
 }
 
 .covid-url {
-    color: #aaa;
     display: block;
     font-size: .8em;
     margin-bottom: 1em;
 }
 
+.covid-url a {
+    background: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
 time {
-    color: #ddd;
+    color: #aaa;
     display: block;
     font-size: .8em;
 }
