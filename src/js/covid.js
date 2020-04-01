@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.get("https://covid-19.bklyn.dev", function (res) {
+    $.get("https://covid-19.bklyn.dev/cases", function (res) {
         const data = res.data;
         let $template = $(".covid-tile");
         $.each(data, function (i) {
