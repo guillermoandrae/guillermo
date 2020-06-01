@@ -1,7 +1,7 @@
 var getSourceColumnContent = function (source, url) {
     var link = document.createElement("a");
     link.setAttribute("href", url);
-    link.innerHTML = source;
+    link.innerHTML = "<i class=\"fab fa-" + source.toString().toLocaleLowerCase() + "\"></i>";
     return link;
 };
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
     $("#posts").DataTable({
         "info": false,
         "lengthChange": false,
-        "pageLength": 7,
+        "pageLength": 5,
         "pagingType": "full_numbers",
         "order": [[ 2, "desc" ]],
         "ajax": "https://api.guillermoandraefisher.com/posts?limit=9999",
@@ -50,7 +50,7 @@ $(document).ready(function () {
         ],
         "language": {
             "search": "_INPUT_",
-            "searchPlaceholder": "Search..."
+            "searchPlaceholder": "Curious? Go for it..."
         },
         "rowCallback": function (row, data, dataIndex) {
             $("td:eq(0)", row).html(getSourceColumnContent(data.source, data.htmlUrl));

@@ -2,9 +2,10 @@ body {
     background: white;
     border-top: 1em solid cornflowerblue;
     color: #333;
-    font-family: "Rubik", sans-serif;
-    font-size: .8em;
-    padding-top: 3em;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    padding-top: 5em;
 }
 
 #container, footer {
@@ -17,7 +18,7 @@ h1+p {
 }
 
 p, ul li {
-    font-size: 1.3em;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
@@ -26,26 +27,24 @@ sup {
 }
 
 a, a:visited, sup a:hover {
-    background: #eee;
-    color: cornflowerblue;
     border: 0;
-    padding: 2px 5px;
+    border-bottom: 5px solid cornflowerblue;
+    color: cornflowerblue;
     text-decoration: none;
 }
 
-a:hover, sup a {
-    background: lightskyblue;
-    color: white;
+a:hover, sup a:hover {
+    border-bottom: 5px solid lightskyblue;
+    color: lightskyblue;
 }
 
-sup a:hover {
-    background: cornflowerblue;
-    color: white;
+sup a, sup a:hover {
+    border-bottom: none;
 }
 
-em {
+strong {
     color: cornflowerblue;
-    font-style: normal;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -55,8 +54,16 @@ ul {
     padding: .2em 0 0;
 }
 
+h1 {
+    font-size: .8em;
+    font-weight: 700;
+    margin-left: -2em;
+    text-transform: uppercase;
+}
+
 footer {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #eee;
+    clear: both;
     font-size: 75%;
     margin-top: 2.4em; 
 }
@@ -64,10 +71,29 @@ footer {
 footer ol {
     margin: 0;
     padding: 1.2em 0 0 1.2em;
+    width: 50%;
 }
 
-footer li {
+footer ol li {
     line-height: 1.5em;
+}
+
+.social {
+    float: right;
+    margin-top: 1.2em;
+}
+
+.social li {
+    display: inline-block;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+ul.social li a, ul.social li a:visited {
+    background: none;
+    border-bottom: none;
+    color: #ddd;
+    font-size: 2em;
 }
 
 @media only screen and (min-width: 959px) {

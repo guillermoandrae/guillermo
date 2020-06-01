@@ -1,7 +1,10 @@
-input {
-    margin: 0 auto;
-    padding: 0;
-    width: 90%;
+input[type="search"] {
+    border: 5px solid lightskyblue;
+    color: #aaa;
+    font-size: 1.5em;
+    margin: .5em auto 0;
+    padding: 20px;
+    width: 100%;
 }
 
 input:focus-within {
@@ -10,15 +13,9 @@ input:focus-within {
 
 input::placeholder {
     color: #ccc;
-    font-style: italic;
 }
 
-input, input:focus {
-    border: none;
-}
-
-#posts {
-    border-top: 1px solid #ddd;
+table#posts {
     margin-top: 1em;
     padding-top: 1em;
     width: 100%;
@@ -26,8 +23,10 @@ input, input:focus {
 
 #posts th {
     border: 0;
-    font-size: .8em;
-    text-align: left;
+    color: #ddd;
+    font-size: .9em;
+    font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -36,14 +35,20 @@ input, input:focus {
 }
 
 #posts td {
+    border-bottom: 1px solid #eee;
     line-height: 1.3;
     padding: 1em;
+}
+
+#posts td a {
+    border-bottom: none;
 }
 
 .dataTables_wrapper .dataTables_paginate a.paginate_button {
     background: #eee;
     border: 0;
     font-size: .9em;
+    line-height: 2.5em;
     padding: .5em 1em;
     text-decoration: none;
     text-transform: uppercase;
