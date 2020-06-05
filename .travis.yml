@@ -5,7 +5,7 @@ cache:
   - node_modules
 script:
 - npm install
-- npm run -sv build
+- npm run -s build --verbose
 deploy:
   provider: s3
   bucket: guillermoandraefisher.com
