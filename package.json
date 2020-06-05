@@ -11,15 +11,15 @@
   "scripts": {
     "build-meta": "cp src/meta/* dist/ && mkdir -p dist/${npm_package_version}/css && mkdir -p dist/${npm_package_version}/js",
     "build-404-less": "lessc src/less/404.less dist/${npm_package_version}/css/404.css",
-    "build-404-html": "cp src/html/404.html dist/404.html && sed -i \"s/{version}/${npm_package_version}/g\" dist/404.html",
+    "build-404-html": "cp src/html/404.html dist/404.html && sed -i '' \"s/{version}/${npm_package_version}/g\" dist/404.html",
     "build-404": "npm run -s build-404-less && npm run -s build-404-html",
     "build-home-less": "lessc src/less/home.less dist/${npm_package_version}/css/home.css",
     "build-home-js": "uglifyjs src/js/search.js src/js/links.js --compress --output dist/${npm_package_version}/js/home.js",
-    "build-home-html": "cp src/html/index.html dist/index.html && sed -i \"s/{version}/${npm_package_version}/g\" dist/index.html",
+    "build-home-html": "cp src/html/index.html dist/index.html && sed -i '' \"s/{version}/${npm_package_version}/g\" dist/index.html",
     "build-home": "npm run -s build-home-less && npm run -s build-home-js && npm run -s build-home-html",
     "build-covid-less": "lessc src/less/covid.less dist/${npm_package_version}/css/covid.css",
     "build-covid-js": "uglifyjs src/js/covid.js --compress --output dist/${npm_package_version}/js/covid.js",
-    "build-covid-html": "cp src/html/covid.html dist/covid.html && sed -i \"s/{version}/${npm_package_version}/g\" dist/covid.html",
+    "build-covid-html": "cp src/html/covid.html dist/covid.html && sed -i '' \"s/{version}/${npm_package_version}/g\" dist/covid.html",
     "build-covid": "npm run -s build-covid-less && npm run -s build-covid-js && npm run -s build-covid-html",
     "build": "npm run -s build-meta && npm run -s build-404 && npm run -s build-home && npm run -s build-covid"
   },
