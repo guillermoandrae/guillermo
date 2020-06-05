@@ -1,0 +1,41 @@
+@import "variables.less";
+
+body {
+  background: @background-color;
+  border-top: 1em solid @highlight-color;
+  color: @text-color;
+  font-family: @font-family;
+  font-size: 1em;
+  font-weight: 300;
+  padding-top: 5em;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+sup {
+  margin-left: .3em;
+}
+
+a, a:visited, sup a:hover {
+  border: 0;
+  border-bottom: 5px solid @highlight-color;
+  color: @highlight-color;
+  text-decoration: none;
+}
+
+a:hover, sup a:hover {
+  border-bottom: 5px solid @light-highlight-color;
+  color: @light-highlight-color;
+}
+
+sup a, sup a:hover {
+  border-bottom: none;
+}
+
+#container, footer {
+  margin: 0 auto 3em;
+  width: 55%;
+}

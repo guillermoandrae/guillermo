@@ -6,32 +6,20 @@
 
     <title>COVID-19 | The life and times of Guillermo A. Fisher</title>
 
-    <meta name="description" content="The life and times of Guillermo A. Fisher">
+    <meta name="description" content="COVID-19 | The life and times of Guillermo A. Fisher">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Guillermo A. Fisher">
 
     <meta name="google-site-verification" content="gD3PYmVi5Mh_W5JVtZa9Ifu4jsl4xyayCERwX2dVVYQ">
 
-    <meta property="og:url" content="https://guillermoandraefisher.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="COVID-19 | The life and times of Guillermo A. Fisher">
-    <meta property="og:description" content="The life and times of Guillermo A. Fisher">
-    <meta property="og:image" content="https://en.gravatar.com/userimage/68503725/4acdbc44d16dc6c0ea026eb107fcfa0b.png?size=200">
-
     <link rel="manifest" href="manifest.webmanifest">
-
     <link rel="apple-touch-icon" href="gravatar.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Google Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,700" rel="stylesheet">
-
     <!-- App CSS -->
-    <link href="css/normalize.css?_=1585786236" rel="stylesheet">
-    <link href="css/styles.css?_=1585786236" rel="stylesheet">
-    <link href="css/interior.css?_=1585786236" rel="stylesheet">
-    <link href="css/covid.css?_=1585786236" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="{version}/css/covid.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7964669-2"></script>
@@ -41,22 +29,6 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-7964669-2');
-    </script>
-
-    <!-- Track outbound links - Google Analytics -->
-    <script>
-        /**
-         * Function that captures a click on an outbound link in Analytics.
-         * This function takes a valid URL string as an argument, and uses that URL string
-         * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-         * using 'navigator.sendBeacon' in browser that support it.
-         */
-        var captureOutboundLink = function(url) {
-            ga('send', 'event', 'outbound', 'click', url, {
-                'transport': 'beacon',
-                'hitCallback': function(){document.location = url;}
-            });
-        }
     </script>
 
     <!-- jQuery -->
@@ -80,6 +52,6 @@
         <time class="covid-time">0</time>
     </div>
 </div>
-<script src="js/covid.js?_=1585786236"></script>
+<script src="{version}/js/covid.js"></script>
 </body>
 </html>

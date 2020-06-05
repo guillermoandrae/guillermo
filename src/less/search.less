@@ -1,6 +1,7 @@
 input[type="search"] {
-    border: 5px solid lightskyblue;
-    color: #aaa;
+    background: @background-color;
+    border: 5px solid @light-highlight-color;
+    color: @light-text-color;
     font-size: 1.5em;
     margin: .5em auto 0;
     padding: 20px;
@@ -12,7 +13,7 @@ input:focus-within {
 }
 
 input::placeholder {
-    color: #ccc;
+    color: @light-text-color;
 }
 
 table#posts {
@@ -23,7 +24,7 @@ table#posts {
 
 #posts th {
     border: 0;
-    color: #ddd;
+    color: @muted-text-color;
     font-size: .9em;
     font-weight: 700;
     text-align: center;
@@ -35,7 +36,7 @@ table#posts {
 }
 
 #posts td {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @muted-division-color;
     line-height: 1.3;
     padding: 1em;
 }
@@ -45,7 +46,7 @@ table#posts {
 }
 
 .dataTables_wrapper .dataTables_paginate a.paginate_button {
-    background: #eee;
+    background: @muted-division-color;
     border: 0;
     font-size: .9em;
     line-height: 2.5em;
@@ -57,12 +58,13 @@ table#posts {
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate a.paginate_button:hover,
 .dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover {
-    background: cornflowerblue;
+    background: @highlight-color;
+    color: @background-color !important;
     border: 0;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    color: white !important;
+    color: @background-color !important;
 }
 
 #posts_filter {
@@ -78,10 +80,4 @@ table.dataTable.no-footer {
     float: none;
     margin-top: 2em;
     text-align: center;
-}
-
-@media only screen and (min-width: 959px) {
-    #posts th:nth-child(2) {
-        width: 150em !important;
-    }
 }

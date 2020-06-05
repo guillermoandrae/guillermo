@@ -31,14 +31,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
-    <!-- Google Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
-
     <!-- App CSS -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/search.css" rel="stylesheet">
-    <link href="css/banner.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="{version}/css/home.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7964669-2"></script>
@@ -80,7 +75,7 @@
     <div id="container">
         <h1>Intro</h1>
         <p><strong>Guillermo Andrae Fisher</strong> has been working on the Web for almost twenty years in several capacities, many of which are detailed on <a href="https://linkedin.com/in/guillermoandrae">LinkedIn</a>. He is currently a Senior Engineering Manager on the University team at <a href="https://joinhandshake.com">Handshake</a>. He is also the founder of <a href="https://757colorcoded.org">757ColorCoded</a>, an organization focussed on helping people of color achieve careers in technology. Guillermo is a Christian, husband, father of four, continuous delivery enthusiast, writer, <a href="https://aws.amazon.com/developer/community/heroes/guillermo-fisher/">AWS Data Hero</a>, and a fan of very silly comedy.</p>
-        <h1>Projects & Decks</h1>
+        <h1>Projects &amp; Decks</h1>
         <p>He aggregates his social media activity<sup><a href="#note-1">1</a></sup> and makes the sum of it available for public consumption through a <a href="https://api.guillermoandraefisher.com/posts">Web API</a>. There are a few interesting repositories in existence at his <a href="https://github.com/guillermoandrae">GitHub</a> account&mdash;including the code for this website<sup><a href="#note-2">2</a></sup>. He is known to occasionally speak at Meetups, colleges, and conferences; you can find the decks for some of his talks at <a href="https://www.slideshare.net/GuillermoAFisher">Slideshare</a>.</p>
         <h1>Social Media Search</h1>
         <table id="posts" class="hover"><thead><tr><th>Source</th><th>Content</th><th>Date</th></tr></thead></table>
@@ -93,12 +88,13 @@
             <li><a href="https://instagram.com/guillermoandrae"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://medium.com/@guillermoandrae"><i class="fab fa-medium"></i></a></li>
             <li><a href="https://github.com/guillermoandrae"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/guillermoandrae"><i class="fab fa-linkedin"></i></a></li>
         </ul>
-        <ol>
-            <li id="note-1">Usually insipid, yet still the best way to know what he's doing.</li>
+        <ol class="footnotes">
+            <li id="note-1">Usually insipid, yet still the best way to know what he's doing...</li>
             <li id="note-2">Use the code; don't use the content.</li>
         </ol>
     </footer>
-    <script src="js/search.js"></script>
+    <script src="{version}/js/home.js"></script>
 </body>
 </html>

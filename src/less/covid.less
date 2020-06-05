@@ -1,12 +1,18 @@
+@import "projects.less";
+
+a, a:hover {
+    border-bottom: 0;
+}
+
 .covid-tile {
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid @muted-division-color;
     display: none;
     padding: 2em 0;
     text-align: center;
 }
 
 .covid-state {
-    color: gray;
+    color: @light-text-color;
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -23,8 +29,8 @@
 }
 
 .covid-url a {
-    background: cornflowerblue;
-    color: white;
+    background: @highlight-color;
+    color: @background-color;
     font-weight: bold;
     padding: 7px 15px;
     text-transform: uppercase;
@@ -35,3 +41,5 @@ time {
     display: block;
     font-size: 1em;
 }
+
+@import "responsive.less";
