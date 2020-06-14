@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+body {
+  background: white;
+  border-top: 1em solid cornflowerblue;
+  color: #333;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  padding-top: 5em;
+}
+p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+sup {
+  margin-left: 0.3em;
+}
+a,
+a:visited,
+sup a:hover {
+  border: 0;
+  border-bottom: 5px solid cornflowerblue;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+a:hover,
+sup a:hover {
+  border-bottom: 5px solid #bfd3f8;
+  color: #bfd3f8;
+}
+sup a,
+sup a:hover {
+  border-bottom: none;
+}
+#container,
+footer {
+  margin: 0 auto 3em;
+  width: 55%;
+}
+#nav {
+  margin-top: -1px;
+  padding: 0;
+  position: absolute;
+  top: 1em;
+}
+#nav a {
+  background: cornflowerblue;
+  color: white;
+  display: block;
+  letter-spacing: 2px;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+#nav a:hover {
+  background: transparent;
+  color: cornflowerblue;
+}
+#container {
+  width: 100%;
+}
+code {
+  color: gold;
+  font-family: "Monaco", monospace;
+  font-weight: bold;
+  font-size: smaller;
+}
+h1 {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  color: cornflowerblue;
+}
+a,
+a:hover {
+  border-bottom: 0;
+}
+.covid-tile {
+  border-bottom: 1px solid #eee;
+  display: none;
+  padding: 2em 0;
+  text-align: center;
+}
+.covid-state {
+  color: #ccc;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.covid-count {
+  display: block;
+  font-size: 6em;
+}
+.covid-url {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.covid-url a {
+  background: cornflowerblue;
+  color: white;
+  font-weight: bold;
+  padding: 7px 15px;
+  text-transform: uppercase;
+}
+time {
+  color: #aaa;
+  display: block;
+  font-size: 1em;
+}
+@media only screen and (max-width: 991.98px) {
+  h1 {
+    margin: 1em auto 0;
+    text-align: center;
+  }
+  p,
+  input[type="search"] {
+    font-size: 1.3em;
+  }
+  #container,
+  footer {
+    width: 80%;
+  }
+  ul.social {
+    float: none;
+  }
+  ol.footnotes,
+  ul.social {
+    margin: 2em auto 0;
+    text-align: center;
+  }
+  #posts th:nth-child(2) {
+    width: 10000px !important;
+  }
+}
