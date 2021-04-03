@@ -236,7 +236,7 @@ table.dataTable.no-footer {
 
   p, input[type="search"] {
     font-size: 1.3em;
-    text-align: justify; }
+    text-align: center; }
 
   #container, footer {
     width: 80%; }
