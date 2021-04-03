@@ -1,0 +1,14 @@
+<hr>
+<footer>
+    <ul class="social">
+        {{ range .Site.Params.Social }}<li><a title="{{ .title }}" href="{{ .link | safeURL }}"><i class="fab {{ .icon }}"></i></a></li>{{ end }}
+    </ul>
+    <p id="copyright">Use the code; don't use the content.</p>
+</footer>
+{{ $search := resources.Get "js/search.js" }}
+{{ $links := resources.Get "js/links.js" }}
+{{ $covid := resources.Get "js/covid.js" }}
+{{ $js := slice $search $links $covid | resources.Concat "js/bundle.js" | minify }}
+<script src="{{ $js.Permalink }}"></script>
+</body>
+</html>

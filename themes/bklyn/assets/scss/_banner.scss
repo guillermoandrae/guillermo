@@ -1,0 +1,11 @@
+#banner {
+    background: $banner-background-color;
+    border-bottom: 1px solid $banner-border-color;
+    color: $banner-text-color;
+    font-weight: 700;
+    padding: 15px 0;
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    width: 100%;
+}

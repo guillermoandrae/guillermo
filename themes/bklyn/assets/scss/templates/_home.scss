@@ -1,0 +1,57 @@
+h1+p {
+  margin-top: .2em;
+}
+
+strong {
+  color: $highlight-color;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: .2em 0 0;
+}
+
+h1 {
+  font-size: .8em;
+  font-weight: 700;
+  margin-left: -2em;
+  text-transform: uppercase;
+}
+
+hr {
+  border-top: 1px solid $muted-division-color;
+}
+
+footer {
+  color: $muted-text-color;
+  clear: both;
+  font-size: 75%;
+}
+
+#copyright {
+  margin: 0;
+  padding: 1.2em 0 0 1.2em;
+  width: 50%;
+}
+
+ul.social {
+  float: right;
+  margin-top: 1.2em;
+}
+
+ul.social li {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+ul.social li a, ul.social li a:visited {
+  background: none;
+  border-bottom: none;
+  color: $muted-text-color;
+  font-size: 2em;
+}

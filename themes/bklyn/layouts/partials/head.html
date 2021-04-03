@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{ $title := print .Site.Title " | " .Title }} {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    {{ $description := print .Description }} {{ if .IsHome }}{{ $description = .Site.Params.Description }}{{ end }}
+    <title>{{ $title }}</title>
+
+    <meta name="description" content="{{ $description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ .Site.Params.Author }}">
+
+    <meta name="google-site-verification" content="{{ .Site.Params.Google_site_veriication }}">
+
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:image" content="https://en.gravatar.com/userimage/68503725/4acdbc44d16dc6c0ea026eb107fcfa0b.png?size=200">
+
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="apple-touch-icon" href="gravatar.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/c7f2d66636.js" crossorigin="anonymous"></script>
+
+    <!-- DataTables JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <!-- App CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
+    <link href="{{ $styles.Permalink }}" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.Google_analytics_id }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ .Site.Params.Google_analytics_id }}');
+    </script>
+
+    <!-- Track outbound links - Google Analytics -->
+    <script>
+        /**
+         * Function that captures a click on an outbound link in Analytics.
+         * This function takes a valid URL string as an argument, and uses that URL string
+         * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+         * using 'navigator.sendBeacon' in browser that support it.
+         */
+        var captureOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon',
+                'hitCallback': function(){document.location = url;}
+            });
+        }
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- banner -->
