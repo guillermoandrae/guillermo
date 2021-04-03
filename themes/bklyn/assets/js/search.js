@@ -40,7 +40,7 @@ $(document).ready(function () {
         "info": false,
         "lengthChange": false,
         "pageLength": 5,
-        "pagingType": "full_numbers",
+        "pagingType": $(window).width() < 991.98 ? "full" : "full_numbers",
         "order": [[ 2, "desc" ]],
         "ajax": "https://api.guillermoandraefisher.com/posts?limit=9999",
         "columns": [
