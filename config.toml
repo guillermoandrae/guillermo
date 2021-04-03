@@ -1,0 +1,54 @@
+baseURL = "https://guillermoandraefisher.com"
+languageCode = "en-us"
+title = "The life and times of Guillermo A. Fisher"
+theme = "bklyn"
+
+######################## params ####################
+[params]
+author = "Guillermo A. Fisher"
+description = "The life and times of Guillermo A. Fisher"
+google_site_veriication = "gD3PYmVi5Mh_W5JVtZa9Ifu4jsl4xyayCERwX2dVVYQ"
+google_analytics_id = "UA-7964669-2"
+
+######################## deployment configuration ####################
+[deployment]
+[[deployment.targets]]
+name = "s3deployment"
+URL = "s3://guillermoandraefisher.com"
+cloudFrontDistributionID = "E2ZORUCHEK0DJT"
+
+######################## social media ########################
+[[params.social]]
+title = "Spotify"
+icon = "fa-spotify"
+link = "https://open.spotify.com/user/1213990935"
+
+[[params.social]]
+title = "Twitter"
+icon = "fa-twitter"
+link = "https://twitter.com/guillermoandrae"
+
+[[params.social]]
+title = "Pinterest"
+icon = "fa-pinterest"
+link = "https://pinterest.com/guillermoandrae"
+
+[[params.social]]
+title = "Instagram"
+icon = "fa-instagram"
+link = "https://instagram.com/guillermoandrae"
+
+[[params.social]]
+title = "Medium"
+icon = "fa-medium"
+link = "https://medium.com/@guillermoandrae"
+
+[[params.social]]
+title = "GitHub"
+icon = "fa-github"
+link = "https://github.com/guillermoandrae"
+
+[[params.social]]
+title = "LinkedIn"
+icon = "fa-linkedin"
+link = "https://linkedin.com/in/guillermoandrae"
