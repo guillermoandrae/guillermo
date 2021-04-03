@@ -250,7 +250,7 @@ table.dataTable.no-footer {
     margin: 2em auto 0;
     text-align: center; }
 
-  #posts th:nth-child(2) {
-    width: 10000px !important; } }
+  #posts {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=style.css.map */
