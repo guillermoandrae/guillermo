@@ -3,9 +3,28 @@ languageCode = "en-us"
 title = "The life and times of Guillermo A. Fisher"
 theme = "bklyn"
 
+######################## custom outputs ####################
+[outputs]
+home = [ "HTML",  "MANIFEST", "HUMANS", "SITEMAP"]
+
+[outputFormats]
+[outputFormats.manifest]
+name = "manifest"
+baseName = "manifest"
+mediaType = "application/json"
+notAlternative = "true"
+
+[outputFormats.humans]
+name = "humans"
+baseName = "humans"
+mediaType = "text/plain"
+notAlternative = "true"
+
 ######################## params ####################
 [params]
 author = "Guillermo A. Fisher"
+wife = "Lisa R. Fisher"
+short_name = "Guillermo"
 description = "The life and times of Guillermo A. Fisher"
 google_site_veriication = "gD3PYmVi5Mh_W5JVtZa9Ifu4jsl4xyayCERwX2dVVYQ"
 google_analytics_id = "UA-7964669-2"
