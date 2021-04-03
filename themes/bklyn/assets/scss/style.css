@@ -235,7 +235,8 @@ table.dataTable.no-footer {
     text-align: center; }
 
   p, input[type="search"] {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    text-align: justify; }
 
   #container, footer {
     width: 80%; }
@@ -243,7 +244,7 @@ table.dataTable.no-footer {
   ul.social {
     float: none; }
 
-  ol.footnotes, ul.social {
+  #copyright, ul.social {
     margin: 2em auto 0;
     text-align: center; }
 
