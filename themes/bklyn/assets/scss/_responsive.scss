@@ -29,4 +29,19 @@
     width: 100% !important;
   }
 
+  #banner {
+    font-size: .8em;
+  }
+
+  #banner + #nav {
+    font-size: .8em;
+    text-align: center;
+    top: 4.5em;
+    width: 100%;
+  }
+
+  #banner + #nav + #container {
+    padding-top: 1em;
+  }
+
 }

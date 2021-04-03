@@ -43,7 +43,7 @@ sup a, sup a:hover {
   color: white;
   display: block;
   letter-spacing: 2px;
-  padding: .5em 1em;
+  padding: .85em 1em;
   text-transform: uppercase; }
 
 #nav a:hover {
@@ -251,6 +251,18 @@ table.dataTable.no-footer {
     text-align: center; }
 
   #posts {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  #banner {
+    font-size: .8em; }
+
+  #banner + #nav {
+    font-size: .8em;
+    text-align: center;
+    top: 4.5em;
+    width: 100%; }
+
+  #banner + #nav + #container {
+    padding-top: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
