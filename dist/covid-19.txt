@@ -1,8 +1,0 @@
-Yo!
-
-There's only one endpoint available here: https://covid-19.bklyn.dev/cases
-If you're interested in the associated web page, go here: https://guillermoandraefisher.com/covid.html
-
---
-
-CDC: https://www.cdc.gov/
