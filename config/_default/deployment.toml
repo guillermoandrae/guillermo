@@ -1,0 +1,4 @@
+[targets]
+name = "s3deployment"
+URL = "s3://guillermoandraefisher.com"
+cloudFrontDistributionID = "E2ZORUCHEK0DJT"

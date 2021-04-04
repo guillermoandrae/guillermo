@@ -1,0 +1,7 @@
+baseURL = "https://guillermoandraefisher.com"
+languageCode = "en-us"
+title = "The life and times of Guillermo A. Fisher"
+enableRobotsTXT = true
+theme = "hugo-bklyn"
+ignoreErrors = [ "error-disable-taxonomy" ]
+disableKinds = [ "taxonomy" ]
