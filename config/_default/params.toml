@@ -58,3 +58,6 @@ url = "js/search.js"
 
 [[ plugins.js ]]
 url = "js/covid.js"
+
+[[ plugins.css ]]
+url = "scss/plugins.scss"

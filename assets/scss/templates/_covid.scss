@@ -2,7 +2,6 @@
   width: 100%;
 
   code {
-    color: $accent-text-color;
     font-family: "Monaco", monospace;
     font-weight: bold;
     font-size: smaller;
@@ -13,7 +12,6 @@
   }
 
   .covid-tile {
-    border-bottom: 1px solid $muted-division-color;
     display: none;
     padding: 2em 0;
     text-align: center;
@@ -23,7 +21,6 @@
   }
 
   .covid-state {
-    color: $light-text-color;
     font-weight: normal;
     text-transform: uppercase;
   }
@@ -40,15 +37,12 @@
   }
 
   .covid-url a {
-    background: $highlight-color;
-    color: $background-color;
     font-weight: bold;
     padding: 7px 15px;
     text-transform: uppercase;
   }
 
   time {
-    color: #aaa;
     display: block;
     font-size: 1em;
   }
