@@ -1,6 +1,7 @@
 description = "The life and times of Guillermo A. Fisher"
 shortName = "Guillermo"
 author = "Guillermo A. Fisher"
+startingCopyrightYear = "2017"
 
 ############## BANNER ##############
 [banner]
