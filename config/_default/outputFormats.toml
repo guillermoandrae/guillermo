@@ -1,0 +1,11 @@
+[manifest]
+name = "manifest"
+baseName = "manifest"
+mediaType = "application/json"
+notAlternative = "true"
+
+[humans]
+name = "humans"
+baseName = "humans"
+mediaType = "text/plain"
+notAlternative = "true"
