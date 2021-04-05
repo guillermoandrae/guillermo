@@ -52,9 +52,6 @@ link = "https://linkedin.com/in/guillermoandrae"
 
 ############## PLUGINS ##############
 [[ plugins.js ]]
-url = "js/links.js"
-
-[[ plugins.js ]]
 url = "js/search.js"
 
 [[ plugins.js ]]
