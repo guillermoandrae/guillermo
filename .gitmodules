@@ -1,3 +1,4 @@
 [submodule "themes/hugo-bklyn"]
 	path = themes/hugo-bklyn
 	url = git@github.com:guillermoandrae/hugo-bklyn.git
+        branch = main
