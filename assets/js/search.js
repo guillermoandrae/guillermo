@@ -29,8 +29,8 @@ var getContentColumnContent = function (source, body) {
     return content;
 };
 
-var getDateColumnContent = function (id, createdAt) {
-    var timestamp = (createdAt.length === 0) ? parseFloat(id) : parseFloat(createdAt) * 1000;
+var getDateColumnContent = function (createdAt) {
+    var timestamp = parseFloat(createdAt) * 1000;
     var newDate = new Date(timestamp);
     return newDate.toLocaleDateString();
 };
@@ -46,7 +46,7 @@ $(document).ready(function () {
         "columns": [
             { "data": "source" },
             { "data": "body" },
-            { "data": "id" }
+            { "data": "createdAt" }
         ],
         "language": {
             "search": "_INPUT_",
@@ -55,7 +55,7 @@ $(document).ready(function () {
         "rowCallback": function (row, data, dataIndex) {
             $("td:eq(0)", row).html(getSourceColumnContent(data.source, data.htmlUrl));
             $("td:eq(1)", row).html(getContentColumnContent(data.source, data.body));
-            $("td:eq(2)", row).html(getDateColumnContent(data.id, data.createdAt));
+            $("td:eq(2)", row).html(getDateColumnContent(data.createdAt));
         }
     });
 });
