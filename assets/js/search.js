@@ -44,7 +44,7 @@ $(document).ready(function () {
         "order": [[ 2, "desc" ]],
         "ajax": "https://api.guillermoandraefisher.com/posts?limit=9999",
         "columns": [
-            { "data": "source" },
+            { "data": "platform" },
             { "data": "body" },
             { "data": "createdAt" }
         ],
@@ -53,8 +53,8 @@ $(document).ready(function () {
             "searchPlaceholder": "Curious? Go for it..."
         },
         "rowCallback": function (row, data, dataIndex) {
-            $("td:eq(0)", row).html(getSourceColumnContent(data.source, data.htmlUrl));
-            $("td:eq(1)", row).html(getContentColumnContent(data.source, data.body));
+            $("td:eq(0)", row).html(getSourceColumnContent(data.platform, data.htmlUrl));
+            $("td:eq(1)", row).html(getContentColumnContent(data.platform, data.body));
             $("td:eq(2)", row).html(getDateColumnContent(data.createdAt));
         }
     });
