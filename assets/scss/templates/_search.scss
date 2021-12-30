@@ -36,6 +36,11 @@ table#posts {
 #posts td {
     line-height: 1.3;
     padding: 1em;
+    text-align: center;
+}
+
+#posts td:nth-child(2) {
+    text-align: left;
 }
 
 #posts td a {
