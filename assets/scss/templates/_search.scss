@@ -78,7 +78,7 @@ table.dataTable.no-footer {
     text-align: center;
 }
 
-@media only screen and (max-width: $small-device-max-width) {
+@media only screen and (max-width: 600px) {
     input[type="search"] {
         font-size: 1em;
     }
