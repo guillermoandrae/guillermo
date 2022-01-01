@@ -7,4 +7,4 @@ aliases = [
 ]
 +++
 
-This is a quick project Guillermo threw together to keep track of confirmed COVID-19 cases. Read more about it [on Medium](https://medium.com/@guillermoandrae/building-an-unflashy-serverless-covid-19-tracker-with-aws-afb6f54ffc52).
+This is a quick project Guillermo threw together to keep track of confirmed COVID-19 cases. Read more about it [on Medium](https://medium.com/@guillermoandrae/building-an-unflashy-serverless-covid-19-tracker-with-aws-afb6f54ffc52). **This statistical information included here is outdated**!
