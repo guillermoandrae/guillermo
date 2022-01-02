@@ -4,7 +4,7 @@ description = "Find out what Guillermo is up to now."
 type = "Now"
 +++
 
-This now page is one of [many available on the internet](https://nownownow.com). Make your way over to the [search](/search) page for more timely, bite-sized updates.
+This /now page is one of [many available on the internet](https://nownownow.com). Make your way over to the [search](/search) page for more timely, bite-sized updates.
 
 * Hiring like crazy to fill Infrastructure and QA roles at [Canvas](https://www.canvas.com/team).
 * Finalizing this year's calendar of events and programs for [757ColorCoded](https://7575colorcoded.org).
