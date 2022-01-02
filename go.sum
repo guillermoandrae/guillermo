@@ -4,3 +4,7 @@ github.com/guillermoandrae/hugo-bklyn v0.0.0-20220101173411-4a448255c19c h1:5Cqd
 github.com/guillermoandrae/hugo-bklyn v0.0.0-20220101173411-4a448255c19c/go.mod h1:d6NFc/Mz4wdRWxdDR2E20S/VlJ43fxBWGW80Ahhv+HM=
 github.com/guillermoandrae/hugo-bklyn v0.0.0-20220101174651-8195e2f98bed h1:YlQj1BdT9OcrYTnaSCojBEphtepszXxv3XFQ+k5IjGo=
 github.com/guillermoandrae/hugo-bklyn v0.0.0-20220101174651-8195e2f98bed/go.mod h1:d6NFc/Mz4wdRWxdDR2E20S/VlJ43fxBWGW80Ahhv+HM=
+github.com/guillermoandrae/hugo-bklyn v0.0.0-20220102055411-bd4c9684312a h1:Ci1diq9f0kXukmh4vpVfNXddzgz2MWb8YcXVyIC8fD0=
+github.com/guillermoandrae/hugo-bklyn v0.0.0-20220102055411-bd4c9684312a/go.mod h1:uD288XJcnnjhyB6zaGTgz8KLVm2mCNFxKcn9rnbnQNI=
+github.com/guillermoandrae/hugo-bklyn v0.0.0-20220102060035-898e3ddd2612 h1:BGUoJTX67kCDclximdS/TkphSYL9H411IZHNURLXrSA=
+github.com/guillermoandrae/hugo-bklyn v0.0.0-20220102060035-898e3ddd2612/go.mod h1:uD288XJcnnjhyB6zaGTgz8KLVm2mCNFxKcn9rnbnQNI=
