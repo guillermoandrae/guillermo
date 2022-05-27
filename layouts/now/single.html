@@ -1,4 +1,11 @@
+{{ $date := .Date.Format "02.01.2006" }}
+{{ $lastmod := .Lastmod.Format "02.01.2006" }}
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+
+    <span>
+        Last edited on {{ .Lastmod.Format "02.01.2006" }}
+    </span>
+
 {{ end }}

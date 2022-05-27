@@ -2,8 +2,15 @@ baseURL = "https://guillermoandraefisher.com"
 languageCode = "en-us"
 title = "The life and times of Guillermo A. Fisher"
 enableRobotsTXT = true
+enableGitInfo = true
 ignoreErrors = [ "error-disable-taxonomy" ]
 disableKinds = [ "taxonomy" ]
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
 
 [module]
     [[module.imports]]

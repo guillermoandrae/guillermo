@@ -15,5 +15,3 @@ This /now page is one of [many available on the internet](https://nownownow.com)
 * Working on blog posts about: engineering leadership, practical preparedness, and a few [AWS](https://aws.amazon.com) services.
 * Keeping myself and my family COVID-19 free for as long as is humanly possible.
 * Building habits to establish a morning routine that includes praying, light-stretching, and reading.
-
-{{ $lastmod := .Lastmod.Format "02.01.2006" }}
