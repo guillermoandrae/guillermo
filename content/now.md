@@ -1,17 +1,11 @@
 +++
 title = "Now"
 description = "Find out what Guillermo is up to now."
-type = "Now"
+type = "now"
 +++
 
-This /now page is one of [many available on the internet](https://nownownow.com). Make your way over to the [search](/search) page for more timely, bite-sized updates.
-
-* Hiring like crazy to fill roles at [Untapped](https://www.untapped.io/team).
-* Finalizing this year's calendar of events and programs for [757ColorCoded](https://7575colorcoded.org).
-* Tweaking the [hugo-bklyn](https://github.com/guillermoandrae/hugo-bklyn) theme here and there. 
-* Putting some effort into making [php-dynamodb](https://github.com/guillermoandrae/php-dynamodb) a useful, well-documented tool.
-* Trying to figure out what my 2022 fitness goals will be.
-* Compiling a list of recent talks that can be added to this site.
-* Working on blog posts about: engineering leadership, practical preparedness, and a few [AWS](https://aws.amazon.com) services.
-* Keeping myself and my family COVID-19 free for as long as is humanly possible.
-* Building habits to establish a morning routine that includes praying, light-stretching, and reading.
+* Still hiring to fill roles at [Untapped](https://www.untapped.io/careers).
+* Thinking about when [757ColorCoded](https://7575colorcoded.org)'s first 2022 in-person event will be.
+* Still stewing over blog posts about: engineering leadership, practical preparedness, and a few [AWS](https://aws.amazon.com) services.
+* Still trying to build habits to establish a morning routine that includes praying, light-stretching, and reading.
+* Finalized my [tier 1 EDC setup](https://kit.co/guillermoandrae/edc-tier-1); tweaking my bag setup.

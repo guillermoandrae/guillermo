@@ -1,11 +1,11 @@
-{{ $date := .Date.Format "02.01.2006" }}
-{{ $lastmod := .Lastmod.Format "02.01.2006" }}
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
+    <p>This /now page is one of <a href="https://nownownow.com">many available on the internet</a>. Make your way over to the <a href="/search">search</a> page for more timely, bite-sized updates.</p>
+
     {{ .Content }}
 
-    <span>
-        Last edited on {{ .Lastmod.Format "02.01.2006" }}
-    </span>
+    <p id="last-edited">
+        Last edited on <time datetime="{{.Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" }}</time>.
+    </p>
 
 {{ end }}
